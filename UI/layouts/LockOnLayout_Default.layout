@@ -1,0 +1,100 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ {
+  FrameWidgetClass "{5F24AA152E486485}" {
+   Name "Frame0"
+   Slot FrameWidgetSlot "{5F24AA152E4864B6}" {
+    Anchor 0 0 0 0
+    PositionX 344
+    OffsetLeft 344
+    PositionY 200
+    OffsetTop 200
+    SizeX 64
+    OffsetRight -408
+    SizeY 64
+    OffsetBottom -264
+   }
+   Color 0.686 0.58 0.259 1
+   {
+    ImageWidgetClass "{5F24AA2CA60F48B8}" {
+     Name "Image0"
+     Slot FrameWidgetSlot "{5F24AA2CA60F48AB}" {
+      Anchor 0 0 0 0
+      PositionX 16
+      OffsetLeft 16
+      PositionY 32
+      OffsetTop 32
+      SizeX 32
+      OffsetRight -48
+      SizeY 32
+      OffsetBottom -64
+     }
+     "Inherit Color" 1
+     Texture "{CE4E8D4158B98FE8}UI/Textures/RadialMenu/RadialMenuPointer.edds"
+     Size 128 128
+     "Transition width" 1
+     Progress 0.5
+    }
+    ImageWidgetClass "{5F24AA27985F0C2D}" {
+     Name "Image1"
+     Slot FrameWidgetSlot "{5F24AA2CA60F48AB}" {
+      Anchor 0 0 0 0
+      PositionX 16
+      OffsetLeft 16
+      OffsetTop 0
+      SizeX 32
+      OffsetRight -48
+      SizeY 32
+      OffsetBottom -32
+     }
+     "Inherit Color" 1
+     Rotation 180
+     Texture "{CE4E8D4158B98FE8}UI/Textures/RadialMenu/RadialMenuPointer.edds"
+     Size 128 128
+     "Transition width" 1
+     Progress 0.5
+    }
+    ImageWidgetClass "{5F24AA276F8936AA}" {
+     Name "Image2"
+     Slot FrameWidgetSlot "{5F24AA2CA60F48AB}" {
+      Anchor 0 0 0 0
+      PositionX 0
+      OffsetLeft 0
+      PositionY 16
+      OffsetTop 16
+      SizeX 32
+      OffsetRight -32
+      SizeY 32
+      OffsetBottom -48
+     }
+     "Inherit Color" 1
+     Rotation 90
+     Texture "{CE4E8D4158B98FE8}UI/Textures/RadialMenu/RadialMenuPointer.edds"
+     Size 128 128
+     "Transition width" 1
+     Progress 0.5
+    }
+    ImageWidgetClass "{5F24AA27503D757C}" {
+     Name "Image3"
+     Slot FrameWidgetSlot "{5F24AA2CA60F48AB}" {
+      Anchor 0 0 0 0
+      PositionX 32
+      OffsetLeft 32
+      PositionY 16
+      OffsetTop 16
+      SizeX 32
+      OffsetRight -64
+      SizeY 32
+      OffsetBottom -48
+     }
+     "Inherit Color" 1
+     Rotation -90
+     Texture "{CE4E8D4158B98FE8}UI/Textures/RadialMenu/RadialMenuPointer.edds"
+     Size 128 128
+     "Transition width" 1
+     Progress 0.5
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,26 @@
+GenericEntity : "{6CD34D6526429EEC}Prefabs/Props/Furniture/BarTable_01.et" {
+ coords 11.972 1 241.943
+ angleY -48.792
+}
+GenericEntity : "{6DEF77B8CDF7528D}Prefabs/Weapons/Launchers/BGONE_Launcher_SACLOS2.et" {
+ coords 11.584 2.066 242.228
+}
+GenericEntity : "{82C0AFB409A3AE0B}Prefabs/Weapons/Launchers/BGONE_Launcher_VIS.et" {
+ coords 11.813 2.13 242.49
+}
+Vehicle BTR1 : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+ coords 193.332 1 53.745
+ angleY 37.012
+}
+GenericEntity : "{E6E70B5FFAC5FEA4}Prefabs/Weapons/Launchers/BGONE_Launcher_PLOS2.et" {
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    SCR_MuzzleInMagComponent "{50F65D04F21F7633}" {
+     AmmoTemplate "{9F9C7B6642576FB6}Prefabs/Weapons/Ammo/BGONE_Ammo_Missile_PLOS.et"
+    }
+   }
+  }
+ }
+ coords 11.332 2.059 241.94
+}

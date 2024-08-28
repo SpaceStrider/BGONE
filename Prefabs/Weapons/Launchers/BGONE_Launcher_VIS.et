@@ -1,0 +1,45 @@
+GenericEntity : "{37F022D0CDC84C11}Prefabs/Weapons/Launchers/M72/Launcher_M72A3_base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SCR_WeaponAttachmentsStorageComponent "{51F080D5CE45A1A2}" {
+   Attributes SCR_ItemAttributeCollection "{51F080D5C64F12C5}" {
+    ItemDisplayName WeaponUIInfo "{5222CB047B845168}" {
+     Name "BGONE - VIS"
+     Description "Example of VIS launcher"
+    }
+   }
+  }
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    BGONE_GuidedMissileLauncherComponent "{61D52846F9F67484}" {
+     m_eLockTypeComponent BGONE_LockType_VIS "{61D52846FACEA01F}" {
+      m_iMaxLockOnRange 2000
+     }
+    }
+    SCR_MuzzleInMagComponent "{50F65D04F21F7633}" {
+     AmmoTemplate "{A5C5EDACAA02EFA5}Prefabs/Weapons/Ammo/BGONE_Ammo_Missile_VIS_TOP.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{A29AE67FF4D82B0F}" {
+   additionalActions {
+    BGONE_AttackProfileSwitchUserAction "{61D528472BF3F184}" {
+     ParentContextList {
+      "firemode"
+     }
+     UIInfo UIInfo "{5F2328C5448E1C2A}" {
+     }
+     "Sort Priority" -2
+    }
+    BGONE_ArmingDistanceSwitchUserAction "{61D528472C3E0AB8}" {
+     ParentContextList {
+      "firemode"
+     }
+     UIInfo UIInfo "{5F2328C5448E1C24}" {
+     }
+     "Sort Priority" -1
+    }
+   }
+  }
+ }
+}

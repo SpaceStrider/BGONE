@@ -1,0 +1,8 @@
+GameProject {
+ ID "BGONE"
+ GUID "5F1EE615E7AE3106"
+ TITLE "BGONE"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

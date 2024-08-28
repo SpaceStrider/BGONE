@@ -1,0 +1,87 @@
+Projectile : "{C0BDA86B5AA5648C}Prefabs/Weapons/Core/Ammo_Rocket_Base.et" {
+ ID "DA5C6308000CDEF2"
+ components {
+  BGONE_GuidedMissileComponent "{61D52845666A1C84}" {
+   m_eSeekerTypeComponent BGONE_SeekerType_PLOS "{61D52845666A1C88}" {
+    m_fArmingDistances {
+     20 100
+    }
+   }
+   m_eAttackProfileComponents {
+    BGONE_AttackProfile_PLOS "{61D52845AFE292F3}" {
+    }
+    BGONE_AttackProfile_PLOS_FLYOVER "{61D52845A1411573}" {
+    }
+   }
+   m_eMissileEngineComponent BGONE_MissileEngine_Base "{61D52845666A1CB2}" {
+   }
+  }
+  CollisionTriggerComponent "{61D52845666A1CB0}" {
+   PROJECTILE_EFFECTS {
+    ExplosionEffect "{61D52845666A1CBC}" {
+     EffectPrefab "{250CCD685336BC19}Prefabs/Weapons/Warheads/Warhead_HEAT_M72A3.et"
+     ParticleEffect "{D3F38F8AA37B77E8}Particles/Weapon/Explosion_M72LAW.ptc"
+     SoundEvent "SOUND_EXPLOSION"
+    }
+    AIExplosionEffect "{61D52845666A1CA7}" {
+    }
+   }
+   SafetyDistance 10
+  }
+  InventoryItemComponent "{526E87778842822F}" {
+   Attributes SCR_ItemAttributeCollection "{526E87778ACB229F}" {
+    ItemDisplayName UIInfo "{526E8777859BAACF}" {
+     Name "#AR-Magazine_M72A3_Name"
+     Description "#AR-Magazine_M72A3_Description"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{61D52845666A1CAE}" {
+     Weight 0.9
+     SizeSetupStrategy Volume
+     ItemVolume 1000
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{52D6F6A5FB82EE10}" {
+      CameraDistanceToItem 1
+      CameraOffset 0 0 0
+     }
+    }
+   }
+  }
+  MagazineComponent "{50F6614BB5D5B0A8}" {
+   UIInfo MagazineUIInfo "{560AE4EBFA0176D4}" {
+    m_sAmmoCaliber "#AR-AmmunitionID_66mm"
+    m_sAmmoType "#AR-AmmoType_M72A3"
+    m_eAmmoTypeFlags HEAT
+    m_MagIndicator SCR_MagazineIndicatorConfiguration "{5660B15AE87FF28E}" : "{650F378E6751CC17}Configs/WeaponInfo/MagazineIndicators/rocket_m72a3.conf" {
+    }
+   }
+  }
+  MeshObject "{851AA4A2AE0A56BF}" {
+   Object "{5FAE8C23FD72D6DA}Assets/Weapons/Magazines/M72/Rocket_M72.xob"
+  }
+  MissileMoveComponent "{0EF36690881261EF}" {
+   InitSpeed 150
+   Mass 0.99
+   TimeToLive 6.1
+   ProjectileEffects {
+    AIHitEffect "{61D52845666A1C55}" {
+    }
+   }
+   BallisticTableConfig "{3E296818AACE9F5B}Configs/Weapons/AIBallisiticTables/AIBT_Rocket_M72A3.conf"
+   ThrustInitTime 0.1
+   ThrustTime 0.05
+   ThrustForce 0
+   ForwardAirFriction 0.03
+   SideAirFriction 0.02
+   DistanceEnableGravitation 0.4
+  }
+  RigidBody "{529E88841E9EDFB4}" {
+   Mass 1.8
+  }
+  RocketTraceEffectComponent "{61D52845666A1C51}" {
+   ParticleEffect "{0F364F4CD1D72350}Particles/Weapon/Trail_PG7VL.ptc"
+  }
+ }
+ SpawnAsCartridge 0
+ ProjectileModel "{5FAE8C23FD72D6DA}Assets/Weapons/Magazines/M72/Rocket_M72.xob"
+}

@@ -1,0 +1,136 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 8205
+   name "LockingState"
+   tl -404 -79
+   res "{C6959AA242750197}Sounds/Weapons/LockOn/LockOnSignal.sig"
+   inputsport {
+    1
+   }
+   outputsport {
+    2
+   }
+   inputvalues {
+    100
+   }
+   inputvaluesmin {
+    0
+   }
+   inputvaluesmax {
+    100
+   }
+  }
+ }
+ sounds {
+  SoundClass {
+   id 2057
+   name "SOUND_LOCKON_DEFAULT"
+   version 0
+   tl 210 -25
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 3090
+       port 65
+      }
+     }
+    }
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 3090
+   name "Shader 3"
+   version 5
+   tl 34 -24
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 5148
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 4115
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 12292
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass {
+   id 4115
+   name "Amplitude 4"
+   version 5
+   tl -164.444 123.778
+   curve "1/r"
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 12292
+   name "LockOn"
+   version 0
+   tl -167 -82
+   ins {
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 8205
+       port 2
+      }
+     }
+    }
+   }
+   Volume -12
+   "Loop count" 255
+   "Infinite loop" 1
+   Selection CustomSignalIndex
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{05F3059672E60A4F}Sounds/Weapons/LockOn/LockOn.wav"
+    }
+    AudioBankSampleClass Sample {
+     Filename "{C78F74895E4DF33D}Sounds/Weapons/LockOn/LockedOn.wav"
+     Index 1
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 5148
+   name "Spatiality 5"
+   version 5
+   tl -165.778 47.889
+   spatialFactor 1
+  }
+ }
+ version 1
+ sourcesLimit 2
+}
